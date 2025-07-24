@@ -7,6 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./favicon.png">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         .gradient-bg {
             background: linear-gradient(135deg, #10b981 0%, #059669 100%);
@@ -36,6 +38,30 @@
         .cta-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+        }
+        /* Swiper customization */
+        .swiper {
+            padding: 20px 0;
+        }
+        .swiper-slide {
+            height: auto;
+        }
+        .swiper-pagination-bullet {
+            background: #10b981;
+            opacity: 0.3;
+        }
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+        }
+        .testimonial-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
         }
     </style>
 </head>
@@ -336,19 +362,52 @@
                 <p class="text-xl text-gray-600">Veja o que nossos alunos estão dizendo sobre suas transformações</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                <div class="bg-white shadow-lg rounded-lg p-4 card-hover">
-                    <img src="https://deyseneres.com/wp-content/uploads/2024/02/WhatsApp-Image-2024-01-28-at-18.47.04-16.jpeg" alt="Depoimento Real 1" class="w-full h-auto rounded-lg">
+            <!-- Swiper -->
+            <div class="swiper testimonials-swiper mb-12">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card p-4">
+                            <img src="./assets/feedback1.jpeg" alt="Depoimento Real 1" class="w-full h-auto rounded-lg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card p-4">
+                            <img src="./assets/feedback2.jpeg" alt="Depoimento Real 2" class="w-full h-auto rounded-lg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card p-4">
+                            <img src="./assets/feedback3.jpeg" alt="Depoimento Real 3" class="w-full h-auto rounded-lg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card p-4">
+                            <img src="./assets/feedback4.jpeg" alt="Depoimento Real 4" class="w-full h-auto rounded-lg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card p-4">
+                            <img src="./assets/feedback5.jpeg" alt="Depoimento Real 5" class="w-full h-auto rounded-lg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card p-4">
+                            <img src="./assets/feedback6.jpeg" alt="Depoimento Real 6" class="w-full h-auto rounded-lg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card p-4">
+                            <img src="./assets/feedback7.jpeg" alt="Depoimento Real 7" class="w-full h-auto rounded-lg">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card p-4">
+                            <img src="./assets/feedback8.jpeg" alt="Depoimento Real 8" class="w-full h-auto rounded-lg">
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white shadow-lg rounded-lg p-4 card-hover">
-                    <img src="https://deyseneres.com/wp-content/uploads/2024/02/WhatsApp-Image-2024-01-28-at-18.47.04-15.jpeg" alt="Depoimento Real 2" class="w-full h-auto rounded-lg">
-                </div>
-                <div class="bg-white shadow-lg rounded-lg p-4 card-hover">
-                    <img src="https://deyseneres.com/wp-content/uploads/2024/02/WhatsApp-Image-2024-01-28-at-18.47.04-11.jpeg" alt="Depoimento Real 3" class="w-full h-auto rounded-lg">
-                </div>
-                <div class="bg-white shadow-lg rounded-lg p-4 card-hover">
-                    <img src="https://deyseneres.com/wp-content/uploads/2024/02/WhatsApp-Image-2024-01-28-at-18.47.04-6.jpeg" alt="Depoimento Real 4" class="w-full h-auto rounded-lg">
-                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
 
             <div class="text-center">
@@ -494,7 +553,55 @@
         </div>
     </footer>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.testimonials-swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                },
+                // when window width is >= 1280px
+                1280: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Effect
+            effect: 'slide',
+            speed: 800,
+        });
+
         // Smooth scrolling para links internos
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
