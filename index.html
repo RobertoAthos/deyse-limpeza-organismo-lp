@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,50 +10,79 @@
     <link rel="icon" type="image/png" href="./favicon.png">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "sn7v508xr1");
+    </script>
+
     <style>
         .gradient-bg {
             background: linear-gradient(135deg, #10b981 0%, #059669 100%);
         }
+
         .hero-gradient {
             background: linear-gradient(to bottom, #f0fdf4, #ffffff);
         }
+
         .card-hover:hover {
             transform: translateY(-4px);
             transition: all 0.3s ease;
         }
+
         .pulse-animation {
             animation: pulse 2s infinite;
         }
+
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
         }
+
         .hero-image {
             border-radius: 20px;
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
         }
+
         .cta-button {
             background: linear-gradient(135deg, #10b981 0%, #059669 100%);
             transition: all 0.3s ease;
         }
+
         .cta-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
         }
+
         /* Swiper customization */
         .swiper {
             padding: 20px 0;
         }
+
         .swiper-slide {
             height: auto;
         }
+
         .swiper-pagination-bullet {
             background: #10b981;
             opacity: 0.3;
         }
+
         .swiper-pagination-bullet-active {
             opacity: 1;
         }
+
         .testimonial-card {
             background: white;
             border-radius: 12px;
@@ -60,18 +90,20 @@
             overflow: hidden;
             transition: transform 0.3s ease;
         }
+
         .testimonial-card:hover {
             transform: translateY(-5px);
         }
     </style>
 </head>
+
 <body class="bg-white">
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center space-x-2">
                 <img src="./assets/logo-deyse.png" alt="Deyse Neres" class="h-12 w-auto">
-                <img src="./assets/inatas-logo.png" alt="Inatas logo" class="h-16 w-auto">      
+                <img src="./assets/inatas-logo.png" alt="Inatas logo" class="h-16 w-auto">
             </div>
             <button class="cta-button text-white px-6 py-2 rounded-lg font-medium">
                 Quero me inscrever
@@ -93,11 +125,13 @@
                         Completa do Organismo
                     </h1>
                     <p class="text-xl text-gray-600 leading-relaxed">
-                        Transforme sua saúde em 21 dias com o método revolucionário que já mudou a vida de mais de 10.000
+                        Transforme sua saúde em 21 dias com o método revolucionário que já mudou a vida de mais de
+                        10.000
                         pessoas. Aprenda a desintoxicar e modular seu organismo de forma natural e definitiva.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <button class="cta-button text-white text-lg px-8 py-4 rounded-lg font-medium flex items-center justify-center">
+                        <button
+                            class="cta-button text-white text-lg px-8 py-4 rounded-lg font-medium flex items-center justify-center">
                             <i class="fas fa-play mr-2"></i>
                             Garantir minha vaga
                         </button>
@@ -118,11 +152,13 @@
                     </div>
                 </div>
                 <div class="relative">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5861.JPG-yZp4DhRkmgnBBR0uiBAege6Tr9Ziho.jpeg" alt="Deyse Neres - Especialista em Limpeza Orgânica" class="hero-image w-full max-w-md mx-auto">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5861.JPG-yZp4DhRkmgnBBR0uiBAege6Tr9Ziho.jpeg"
+                        alt="Deyse Neres - Especialista em Limpeza Orgânica" class="hero-image w-full max-w-md mx-auto">
                     <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
                         <div class="flex items-center space-x-3">
                             <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center p-2">
-                                <img src="./assets/logo-deyse.png" alt="Certificação" class="w-full h-full object-contain">
+                                <img src="./assets/logo-deyse.png" alt="Certificação"
+                                    class="w-full h-full object-contain">
                             </div>
                             <div>
                                 <p class="font-semibold text-gray-900">Certificação</p>
@@ -141,7 +177,8 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">O que você vai aprender</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Um método completo e científico para transformar sua saúde através da limpeza e modulação do organismo
+                    Um método completo e científico para transformar sua saúde através da limpeza e modulação do
+                    organismo
                 </p>
             </div>
 
@@ -149,7 +186,8 @@
                 <div class="bg-white border-0 shadow-lg rounded-lg p-6 text-center card-hover">
                     <div class="text-4xl mb-4">🧬</div>
                     <h3 class="text-xl font-semibold mb-3 text-gray-900">Detoxificação Celular</h3>
-                    <p class="text-gray-600">Aprenda técnicas avançadas para eliminar toxinas acumuladas no organismo</p>
+                    <p class="text-gray-600">Aprenda técnicas avançadas para eliminar toxinas acumuladas no organismo
+                    </p>
                 </div>
                 <div class="bg-white border-0 shadow-lg rounded-lg p-6 text-center card-hover">
                     <div class="text-4xl mb-4">🌿</div>
@@ -179,7 +217,8 @@
             </div>
 
             <div class="text-center">
-                <button class="cta-button text-white text-lg px-10 py-4 rounded-lg font-medium inline-flex items-center">
+                <button
+                    class="cta-button text-white text-lg px-10 py-4 rounded-lg font-medium inline-flex items-center">
                     Quero Aprender Tudo Isso Agora
                     <i class="fas fa-arrow-right ml-2"></i>
                 </button>
@@ -194,7 +233,8 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">Conheça a Profª Deyse Neres</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Naturopata, Educadora e Pioneira em Saúde Integrativa no Brasil com mais de 10 anos transformando vidas
+                    Naturopata, Educadora e Pioneira em Saúde Integrativa no Brasil com mais de 10 anos transformando
+                    vidas
                 </p>
             </div>
 
@@ -202,7 +242,8 @@
                 <!-- Foto e Destaques -->
                 <div class="space-y-8">
                     <div class="relative">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0463.JPG-NEn9I9l5liU9Sh0X8ftzonMOoVdJU0.jpeg" alt="Deyse Neres palestrando" class="rounded-2xl shadow-xl w-full max-w-md mx-auto">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0463.JPG-NEn9I9l5liU9Sh0X8ftzonMOoVdJU0.jpeg"
+                            alt="Deyse Neres palestrando" class="rounded-2xl shadow-xl w-full max-w-md mx-auto">
                         <div class="absolute -bottom-4 -right-4 bg-green-600 text-white p-4 rounded-xl shadow-lg">
                             <div class="text-center">
                                 <div class="text-2xl font-bold">10+</div>
@@ -210,7 +251,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- Estatísticas -->
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-white rounded-xl p-6 shadow-lg text-center">
@@ -232,12 +273,16 @@
                             Especialização Principal
                         </h3>
                         <p class="text-lg text-gray-700 leading-relaxed mb-4">
-                            Coordenadora de Pós-Graduação em Biorressonância e Naturopatia, especialista em limpeza e modulação completa do organismo.
+                            Coordenadora de Pós-Graduação em Biorressonância e Naturopatia, especialista em limpeza e
+                            modulação completa do organismo.
                         </p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Naturopatia</span>
-                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Biorressonância</span>
-                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Saúde Integrativa</span>
+                            <span
+                                class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Naturopatia</span>
+                            <span
+                                class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Biorressonância</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Saúde
+                                Integrativa</span>
                         </div>
                     </div>
 
@@ -258,7 +303,8 @@
                         </div>
                     </div>
 
-                    <button class="cta-button text-white text-lg px-8 py-4 rounded-xl font-medium inline-flex items-center w-full justify-center">
+                    <button
+                        class="cta-button text-white text-lg px-8 py-4 rounded-xl font-medium inline-flex items-center w-full justify-center">
                         Quero Ser Orientado pela Deyse
                         <i class="fas fa-user-graduate ml-2"></i>
                     </button>
@@ -340,14 +386,27 @@
                         + Outras Especializações Avançadas
                     </h3>
                     <div class="flex flex-wrap justify-center gap-3">
-                        <span class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Radiestesia</span>
-                        <span class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Auriculoterapia</span>
-                        <span class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Geoterapia</span>
-                        <span class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Terapia Clark</span>
-                        <span class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Florais Quânticos</span>
-                        <span class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Metafísica da Saúde</span>
-                        <span class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Práticas Injetáveis</span>
-                        <span class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Medicina Tradicional Chinesa</span>
+                        <span
+                            class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Radiestesia</span>
+                        <span
+                            class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Auriculoterapia</span>
+                        <span
+                            class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Geoterapia</span>
+                        <span
+                            class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Terapia
+                            Clark</span>
+                        <span
+                            class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Florais
+                            Quânticos</span>
+                        <span
+                            class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Metafísica
+                            da Saúde</span>
+                        <span
+                            class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Práticas
+                            Injetáveis</span>
+                        <span
+                            class="bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm">Medicina
+                            Tradicional Chinesa</span>
                     </div>
                 </div>
             </div>
@@ -411,7 +470,8 @@
             </div>
 
             <div class="text-center">
-                <button class="cta-button text-white text-lg px-10 py-4 rounded-lg font-medium inline-flex items-center">
+                <button
+                    class="cta-button text-white text-lg px-10 py-4 rounded-lg font-medium inline-flex items-center">
                     Quero Ter Resultados Como Eles
                     <i class="fas fa-trophy ml-2"></i>
                 </button>
@@ -463,7 +523,8 @@
                             <p class="text-sm text-gray-500">*Parcelamento no cartão de crédito</p>
                         </div>
                         <a href="https://pay.kiwify.com.br/02GcG92" target="_blank">
-                            <button class="w-full bg-green-600 hover:bg-green-700 text-white text-xl py-5 rounded-lg font-bold flex items-center justify-center transition-colors pulse-animation mb-4">
+                            <button
+                                class="w-full bg-green-600 hover:bg-green-700 text-white text-xl py-5 rounded-lg font-bold flex items-center justify-center transition-colors pulse-animation mb-4">
                                 Garantir minha vaga
                                 <i class="fas fa-arrow-right ml-2"></i>
                             </button>
@@ -497,11 +558,13 @@
             <div class="space-y-6 mb-12">
                 <div class="bg-white shadow-md rounded-lg p-6">
                     <h3 class="text-lg font-semibold text-gray-900 mb-3">Quanto tempo dura o curso?</h3>
-                    <p class="text-gray-700">O curso é dividido em 13 aulas 100% gravado. Assista onde e quando quiser!</p>
+                    <p class="text-gray-700">O curso é dividido em 13 aulas 100% gravado. Assista onde e quando quiser!
+                    </p>
                 </div>
                 <div class="bg-white shadow-md rounded-lg p-6">
                     <h3 class="text-lg font-semibold text-gray-900 mb-3">Preciso de conhecimento prévio?</h3>
-                    <p class="text-gray-700">Não! O curso foi desenvolvido para iniciantes e também para quem já tem conhecimento na área.</p>
+                    <p class="text-gray-700">Não! O curso foi desenvolvido para iniciantes e também para quem já tem
+                        conhecimento na área.</p>
                 </div>
                 <div class="bg-white shadow-md rounded-lg p-6">
                     <h3 class="text-lg font-semibold text-gray-900 mb-3">Como funciona a garantia?</h3>
@@ -509,13 +572,15 @@
                 </div>
                 <div class="bg-white shadow-md rounded-lg p-6">
                     <h3 class="text-lg font-semibold text-gray-900 mb-3">Vou ter suporte durante o curso?</h3>
-                    <p class="text-gray-700">Sim! Você terá acesso ao grupo VIP no Telegram e suporte direto com nossa equipe especializada.</p>
+                    <p class="text-gray-700">Sim! Você terá acesso ao grupo VIP no Telegram e suporte direto com nossa
+                        equipe especializada.</p>
                 </div>
             </div>
 
             <div class="text-center">
                 <a href="https://wa.me/5573981152579" target="_blank">
-                    <button class="cta-button text-white text-lg px-10 py-4 rounded-lg font-medium inline-flex items-center">
+                    <button
+                        class="cta-button text-white text-lg px-10 py-4 rounded-lg font-medium inline-flex items-center">
                         Ainda Tenho Dúvidas - Quero Falar com o Suporte
                         <i class="fas fa-headset ml-2"></i>
                     </button>
@@ -530,7 +595,8 @@
             <h2 class="text-3xl lg:text-4xl font-bold mb-6">Sua Transformação Começa Agora</h2>
             <p class="text-xl mb-8 opacity-90">Não deixe para amanhã a mudança que pode começar hoje</p>
             <div class="space-y-4">
-                <button class="bg-white text-green-600 hover:bg-gray-100 text-xl px-12 py-5 rounded-lg font-bold inline-flex items-center transition-colors">
+                <button
+                    class="bg-white text-green-600 hover:bg-gray-100 text-xl px-12 py-5 rounded-lg font-bold inline-flex items-center transition-colors">
                     Quero Transformar Minha Vida - R$ 99,00
                     <i class="fas fa-arrow-right ml-2"></i>
                 </button>
@@ -546,7 +612,8 @@
                 <img src="./assets/logo-deyse.png" alt="Deyse Neres" class="h-16 w-auto">
                 <img src="./assets/inatas-logo.png" alt="Inatas logo" class="h-16 w-auto">
             </div>
-            <p class="text-gray-300 text-lg mb-6">Transformando vidas através da saúde integral e modulação orgânica.</p>
+            <p class="text-gray-300 text-lg mb-6">Transformando vidas através da saúde integral e modulação orgânica.
+            </p>
             <div class="border-t border-gray-800 pt-6">
                 <p class="text-gray-400">&copy; 2025 Deyse Neres. Todos os direitos reservados.</p>
             </div>
@@ -566,7 +633,7 @@
                 delay: 3000,
                 disableOnInteraction: false,
             },
-            
+
             // Responsive breakpoints
             breakpoints: {
                 // when window width is >= 320px
@@ -615,7 +682,7 @@
         // Adicionar funcionalidade aos botões CTA
         document.querySelectorAll('button').forEach(button => {
             if (button.textContent.includes('Garantir') || button.textContent.includes('Começar') || button.textContent.includes('Transformar') || button.textContent.includes('Quero')) {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     // Scroll para a seção de preços
                     const offerSection = document.querySelector('.gradient-bg');
                     if (offerSection) {
@@ -626,4 +693,5 @@
         });
     </script>
 </body>
+
 </html>
